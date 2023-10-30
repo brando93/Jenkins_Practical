@@ -35,15 +35,6 @@ indexing
 # Exclude only config.xml files in repository subdirectories.
 !config.xml
 
-# Don't track workspaces (when users build on the master).
-jobs/**/*workspace
-
-# Security warning: If secrets are included with your configuration, then an
-# adversary will be able to decrypt all encrypted secrets within Jenkins
-# config.  Including secrets is a bad practice, but the example is included in
-# case someone still wants it for convenience.  Uncomment the following line to
-# include secrets for decryption with repository configuration in Git.
-
 #!/secret*
 
 # As a result, only Jenkins settings and job config.xml files in JENKINS_HOME
